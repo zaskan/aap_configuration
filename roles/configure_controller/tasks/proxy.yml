@@ -1,0 +1,5 @@
+---
+- name: Inject proxy settings
+  ansible.controller.settings:
+    settings: "{{ lookup('file','../vars/proxy.json') | from_json }}"
+
