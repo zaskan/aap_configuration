@@ -6,4 +6,5 @@
     - role: configure_controller 
       vars:
         ldap: true
+        proxy: true
 

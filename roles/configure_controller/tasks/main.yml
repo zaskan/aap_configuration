@@ -1,5 +1,9 @@
 ---
 # tasks file for configure_controller
-- name: Configure LDAP
+- name: Configure proxy
   include_tasks: ldap.yml
   when: ldap == true
+
+- name: Configure proxy
+  include_tasks: proxy.yml
+  when: proxy == true
