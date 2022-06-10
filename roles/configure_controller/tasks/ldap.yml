@@ -1,0 +1,5 @@
+---
+- name: Inject ldap settings
+  ansible.controller.settings:
+    settings: "{{ lookup('file','../vars/ldap.json') | from_json }}"
+

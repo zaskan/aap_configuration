@@ -1,0 +1,5 @@
+---
+# tasks file for configure_controller
+- name: Configure LDAP
+  include_tasks: ldap.yml
+  when: ldap == true
