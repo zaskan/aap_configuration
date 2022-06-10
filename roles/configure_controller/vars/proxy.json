@@ -1,5 +1,7 @@
 {
-"https_proxy": "http://192.168.122.212:3128",
-"http_proxy": "http://192.168.122.212:3128",
-"no_proxy": "192.168.122.80, tower.local"
+    "AWX_TASK_ENV": [
+        "https_proxy": "http://192.168.122.212:3128",
+        "http_proxy": "http://192.168.122.212:3128",
+        "no_proxy": "192.168.122.80, tower.local"
+    ]
 }
