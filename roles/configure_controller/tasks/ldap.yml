@@ -1,4 +1,8 @@
 ---
+- name: Include secrets
+  include_vars:
+    file: "../vars/secrets.yml"
+
 - name: Inject ldap settings
   ansible.controller.settings:
     settings: "{{ lookup('file','../vars/ldap.json') | from_json }}"
@@ -7,5 +11,4 @@
   ansible.controller.settings:
     name: "AUTH_LDAP_BIND_PASSWORD"
     value: "{{ AUTH_LDAP_BIND_PASSWORD }}"
-      #no_log: true
 
