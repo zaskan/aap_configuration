@@ -4,7 +4,7 @@
     settings: "{{ lookup('file','../vars/ldap.json') | from_json }}"
 
 - name: Set the LDAP Auth Bind Password
-  settings:
+  ansible.controller.settings:
     name: "AUTH_LDAP_BIND_PASSWORD"
     value: "{{ AUTH_LDAP_BIND_PASSWORD }}"
   no_log: true
