@@ -11,4 +11,5 @@
   ansible.controller.settings:
     name: "AUTH_LDAP_BIND_PASSWORD"
     value: "{{ AUTH_LDAP_BIND_PASSWORD }}"
+  no_log: true
 
