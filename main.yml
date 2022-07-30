@@ -1,5 +1,5 @@
 ---
-- hosts: controller
+- hosts: localhost
   gather_facts: no
   collections: ansible.controller
   roles: 
